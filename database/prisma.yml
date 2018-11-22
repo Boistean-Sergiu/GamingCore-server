@@ -1,0 +1,6 @@
+endpoint: https://eu1.prisma.sh/boisteansergiu-3691cd/gamingCore/dev
+datamodel: datamodel.graphql
+secret: gamingCoreSecretLicentaSergiu
+hooks:
+  post-deploy:
+    - yarn graphql get-schema --project database
